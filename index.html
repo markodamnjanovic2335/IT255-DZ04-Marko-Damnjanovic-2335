@@ -1,0 +1,135 @@
+<html >
+<head>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+function initialize() {
+  var mapProp = {
+    center:new google.maps.LatLng(44.844071, 20.411763),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var mapProp2 = {
+    center:new google.maps.LatLng(44.829871, 20.456162),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var mapProp3 = {
+    center:new google.maps.LatLng(44.819282, 20.465223),
+    zoom:15,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+  var map2=new google.maps.Map(document.getElementById("googleMap2"),mapProp2);
+  var map3=new google.maps.Map(document.getElementById("googleMap3"),mapProp3);
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<script language="JavaScript">
+function funkcijaDatum()
+{
+   
+   var thisDate = new Date();
+ 
+   document.write("<p>Datum je: ");
+   document.write(thisDate.toDateString());
+   document.write("</p>");
+}
+ 
+
+ 
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Dronovi Mare</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+<link href="lessFajl/salessom.less" rel="stylesheet" type="text/css" media="all" />
+<link href="css/fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
+</head>
+<body>
+<div id="wrapper">
+	<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<h1><a href="#">DRONOVI MARE</a></h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li class="active"> <a href="#" accesskey="1" title="">Glavna</a></li>
+				<li><a href="#" accesskey="2" title="">Proizvodi</a></li>
+				<li><a href="#" accesskey="3" title="">O nama</a></li>
+				<li><a href="#" accesskey="4" title="">Kontakt</a></li>
+				
+			</ul>
+		</div>
+	</div>
+	</div>
+	<div id="banner">
+		<div class="container">
+			<div class="title">
+				<h2>Prodajemo sve vrste dronova</h2>
+				<span class="byline">Povoljne Cene</span> </div>
+			
+		</div>
+	</div>
+
+    
+	<div id="page" class="container">
+    <iframe width="1000" height="450" src="https://www.youtube.com/embed/jTQLYeXlxd8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+	<h2><br> Kvalitan dizajn i jednstven kvalitet </h2>
+
+  </div>
+
+  <div id="featured">
+		<div class="container">
+        <img src="images/1000.jpg" alt="" width="1000" height="450" />
+			<div class="title">
+				<h2>Unikat</h2>
+				<span class="byline">Kupi sada!</span> </div>
+			<p>Ako narucis <strong>DRON</strong> dobijas besplatno skakanje padobranom kod našeg partnera <a href="http://tandemskokbeograd.com/" rel="nofollow">Tandem Skokovi</a>
+		</div>
+		
+	</div>
+    
+    
+	<div id="extra" class="container">
+		<div class="title">
+			<h2>Posetite nas od nekih od ovih mesta</h2>
+			<span class="byline">Za sada samo na nekim lokacijama u Beogradu:</span> </div>
+		<div id="three-column">
+			<div class="boxA">
+				<div class="box">
+					<p>Ulica: Glavna ulica 17, Zemun</p>
+					<div id="googleMap" style="width:280px;height:280px;"></div>
+				</div>
+			</div>
+			<div class="boxB">
+				<div class="box">
+					<p>Tadeuša Košćuškog 63, Beograd</p>
+					<div id="googleMap2" style="width:280px;height:280px;"></div>
+				</div>
+			</div>
+			<div class="boxC">
+				<div class="box">
+					<p> Francuska ulica 12, Beograd</p>
+					<div id="googleMap3" style="width:280px;height:280px;"></div>
+				</div>
+			</div>
+		</div>
+		<!--<ul class="actions">
+			<li><a href="#" class="button"></a></li>
+		</ul>-->
+	</div>
+   <script language="JavaScript">
+    funkcijaDatum();
+</script> 
+</div>
+<div id="copyright" class="container">
+	<p>&copy;  All rights reserved by <a href="https://www.facebook.com/marko.damnjanovic.5">Marko Damnjanovic</a></a>.</p>
+</div>
+</body>
+</html>
